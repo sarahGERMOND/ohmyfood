@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  h1{
+    font-family: "Shrikhand", cursive;
+    
+  }
+  h2 {
+   font-weight: 700;
+  }
+  .bg-grey {
+    background-color: #eaeaea;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .padding-10 {
+    padding: 10px 0;
+  }
+  @media (max-width: 480px) {
+    header {
+      text-align: center;
+    }
+    header h1 {
+      position: relative;
+      margin: 0;
+  
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    .reservation
+    {
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+button {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+h2 {
+  font-weight: 700;
+}
+.bg-grey {
+  background-color: #cdc6c6;
+}
+.bg-grey-clear {
+  background-color: #fff;
+}
+.bg-purple {
+  background-color: #9356dc;
+}
+.bg-turquoise {
+  background-color: #99e2d0;
+}
+.green {
+  color: #0a8d6d;
+}
+.padding-15 {
+  padding: 15px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 27px;
+  }
+  header {
+    text-align: center;
+  }
+  header h1 {
+    position: relative;
+    margin: 0;
+
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .reservation {
+    text-align: center;
+    padding: 40px 35px;
+  }
+  .reservation h2 {
+    margin-top: 0;
+  }
+  .reservation button {
+    background: rgb(162, 91, 220);
+    background: linear-gradient(
+      0deg,
+      rgba(162, 91, 220, 1) 0%,
+      rgba(233, 114, 218, 1) 100%
+    );
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    padding: 15px;
+    box-shadow: 0px 4px 12px #aaa;
+  }
+  .fonctionnement {
+    padding: 25px;
+  }
+  .fonctionnement ul {
+    padding: 0;
+  }
+  .fonctionnement li {
+    position: relative;
+    padding: 25px;
+    display: block;
+    box-shadow: 0px 4px 12px #aaa;
+    margin-bottom: 25px;
+    border-radius: 25px;
+  }
+  .fonctionnement li:hover {
+    background-color: #f5edff;
+  }
+  .fonctionnement li:hover i {
+    color: #9356dc;
+  }
+  .fonctionnement .number {
+    position: absolute;
+    left: -14px;
+    top: 33%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+  }
+  .fonctionnement li i {
+    width: 25px;
+  }
+  .restaurants ul {
+    padding: 0;
+  }
+  .restaurants li {
+    margin: 15px 0;
+    border-radius: 25px;
+    box-shadow: 0px 4px 12px #aaa;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .restaurants .wrap-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  .restaurants .infos h3 {
+    margin: 5px 0;
+  }
+  .restaurants .infos p {
+    margin: 0;
+  }
+  .restaurants .new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    color: #0a8d6d;
+    z-index: 1;
+  }
+  .footer img {
+    height: 20px;
+    filter: brightness(5);
+  }
+  .footer {
+    width: 400px;
+    height: 600px;
+
+    background-color: black;
+    color: white;
+  }
+}
