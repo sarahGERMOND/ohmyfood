@@ -7,13 +7,23 @@ body {
 img {
   max-width: 100%;
 }
+.text-center {
+  text-align: center;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 li {
   list-style: none;
 }
 button {
   font-family: "Roboto", sans-serif;
 }
-h1 {
+h1,
+.menu h2,
+footer h3 {
   font-family: "Shrikhand", cursive;
 }
 h2 {
@@ -37,112 +47,192 @@ h2 {
 .padding-15 {
   padding: 15px;
 }
-@media (max-width: 480px) {
-  h2 {
-    font-size: 27px;
+.no-margin {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.flex-align-center {
+  align-items: center;
+  display: flex;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px #aaa;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  position: relative;
+}
+.btn-gradiant {
+  background: rgb(162, 91, 220);
+  background: linear-gradient(
+    0deg,
+    rgba(162, 91, 220, 1) 0%,
+    rgba(233, 114, 218, 1) 100%
+  );
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  padding: 15px;
+  box-shadow: 0px 4px 12px #aaa;
+}
+.fa-heart {
+  color: #fff;
+  filter: drop-shadow(0 0 2px black);
+  transition: all 1s ease-in-out;
+}
+.fa-heart:hover {
+  color: #9356dc;
+}
+#loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vh;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  animation: disparition 1s forwards;
+  animation-delay: 3s;
+  overflow: hidden;
+  z-index: 1000;
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
   }
-  header {
-    text-align: center;
+  100% {
+    opacity: 0;
+    height: 0;
   }
-  header h1 {
-    position: relative;
-    margin: 0;
+}
+@media (min-width: 480px) {
+  /*responsive*/
+}
+.valide {
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: green;
+  right: 0;
+}
 
-    text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-  .reservation {
-    text-align: center;
-    padding: 40px 35px;
-  }
-  .reservation h2 {
-    margin-top: 0;
-  }
-  .reservation button {
-    background: rgb(162, 91, 220);
-    background: linear-gradient(
-      0deg,
-      rgba(162, 91, 220, 1) 0%,
-      rgba(233, 114, 218, 1) 100%
-    );
-    color: #fff;
-    border-radius: 25px;
-    border: none;
-    font-weight: 700;
-    padding: 15px;
-    box-shadow: 0px 4px 12px #aaa;
-  }
-  .fonctionnement {
-    padding: 25px;
-  }
-  .fonctionnement ul {
-    padding: 0;
-  }
-  .fonctionnement li {
-    position: relative;
-    padding: 25px;
-    display: block;
-    box-shadow: 0px 4px 12px #aaa;
-    margin-bottom: 25px;
-    border-radius: 25px;
-  }
-  .fonctionnement li:hover {
-    background-color: #f5edff;
-  }
-  .fonctionnement li:hover i {
-    color: #9356dc;
-  }
-  .fonctionnement .number {
-    position: absolute;
-    left: -14px;
-    top: 33%;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-  }
-  .fonctionnement li i {
-    width: 25px;
-  }
-  .restaurants ul {
-    padding: 0;
-  }
-  .restaurants li {
-    margin: 15px 0;
-    border-radius: 25px;
-    box-shadow: 0px 4px 12px #aaa;
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
-  }
-  .restaurants .wrap-image {
-    height: 200px;
-    overflow: hidden;
-  }
-  .restaurants .infos h3 {
-    margin: 5px 0;
-  }
-  .restaurants .infos p {
-    margin: 0;
-  }
-  .restaurants .new {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 10px;
-    color: #0a8d6d;
-    z-index: 1;
-  }
-  .footer img {
-    height: 20px;
-    filter: brightness(5);
-  }
-  .footer {
-    width: 400px;
-    height: 600px;
+h2 {
+  font-size: 27px;
+}
+header {
+  text-align: center;
+}
+header h1 {
+  position: relative;
+  margin: 0;
 
-    background-color: black;
-    color: white;
-  }
+  text-align: center;
+}
+.accueil header h1 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.reservation {
+  text-align: center;
+  padding: 40px 35px;
+}
+.reservation h2 {
+  margin-top: 0;
+}
+
+.fonctionnement {
+  padding: 25px;
+}
+.fonctionnement ul {
+  padding: 0;
+}
+.fonctionnement li {
+  position: relative;
+  padding: 25px;
+  display: block;
+}
+.fonctionnement li:hover {
+  background-color: #f5edff;
+}
+.fonctionnement li:hover i {
+  color: #9356dc;
+}
+.fonctionnement .number {
+  position: absolute;
+  left: -14px;
+  top: 33%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.fonctionnement li i {
+  width: 25px;
+}
+.restaurants ul {
+  padding: 0;
+}
+.restaurants li {
+  margin: 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+.restaurants .wrap-image {
+  height: 200px;
+  overflow: hidden;
+}
+.restaurants .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .infos h3 {
+  margin: 5px 0;
+}
+.restaurants .infos p {
+  margin: 0;
+}
+.restaurants .new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  color: #0a8d6d;
+  z-index: 1;
+}
+.restaurants .like i:hover {
+  background: rgb(162, 91, 220);
+  background: linear-gradient(
+    0deg,
+    rgba(162, 91, 220, 1) 0%,
+    rgba(233, 114, 218, 1) 100%
+  );
+  cursor: pointer;
+}
+#menu {
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  margin-top: -50px;
+  padding: 15px;
+}
+.menu h3::after {
+  display: block;
+  content: "";
+  width: 60px;
+  border-bottom: 2px solid #99e2d0;
+}
+footer {
+  width: 400px;
+  height: 600px;
+
+  background-color: #353535;
+  color: white;
 }
